@@ -1,0 +1,12 @@
+body {
+    width: 50%;
+    margin: 5% auto 5%;
+}
+
+form {
+    text-align: left;
+}
+
+.sex {
+    border: none;
+}

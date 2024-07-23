@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="" method="post">
+        <lable>
+            Повне ім'я: <input type="text" name="name" placeholder="введіть ім'я" required>
+        </lable>
+        <lable>
+            Email: <input type="email" name="mail" placeholder="введіть пошту" required>
+        </lable>
+        <lable>
+            Телефон: <input type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        </lable>
+        <lable>
+            Пароль:
+            <input type="password" minlength="5" name="password" placeholder="введіть пароль" required>
+        </lable>
+        <lable>
+            Пароль ще раз:
+            <input type="password" name="repeat-password" placeholder="повторіть пароль" required>
+        </lable>
+        <fieldset class="sex">
+            Стать:
+            <lable>
+                чоловіча
+                <input type="radio" name="sex" value="male" required>
+            </lable>
+            <lable>
+                жіноча
+                <input type="radio" name="sex" value="female" required>
+            </lable>
+            <lable>
+                інша
+                <input type="radio" name="sex" value="other" required>
+            </lable>
+            <lable>
+                не хочу вказувати
+                <input type="radio" name="sex" value="none" required>
+            </lable>
+        </fieldset>
+        <lable>
+            Вік:
+            <input type="number" name="age" min="18" placeholder="введіть вік" required>
+        </lable>
+        <lable>
+            Курс:
+            <select name="courses" required>
+                <option value="frontend">Frontend</option>
+                <option value="backend">Backend</option>
+                <option value="project-manager">Project-manager</option>
+            </select>
+        </lable>
+        <lable>
+            Адреса:
+            <input type="textarea" name="adress" placeholder="введіть адресу">
+        </lable>
+        <lable>
+            Я погоджуюся з обробкою персональних даних
+            <input type="checkbox" name="agrement" required>
+        </lable>
+        <button type="reset">Очистити форму</button>
+        <button>Зареєструватися</button>
+    </form>
+</body>
+
+</html>
