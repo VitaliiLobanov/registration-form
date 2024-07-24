@@ -16,6 +16,7 @@ form {
 input {
     margin: 16px 0 0 16px;
     font-size: 20px;
+    text-align: center;
 }
 
 select {
@@ -29,7 +30,20 @@ select {
     margin-right: 0;
 }
 
-.agrement input{
+option:first {
+    color: gray;
+}
+
+textarea {
+    margin: 16px 0 0 16px;
+    font-size: 20px;
+    text-align: center;
+    font-family: inherit;
+    width: 200px;
+    height: 80px;
+}
+
+.agrement input {
     margin-left: 0;
     font-size: 14px;
 }
@@ -47,4 +61,4 @@ button {
 
 
 
-/* TODO: Роздуплитись як зробити всі поля в один стовпчик */
+/* TODO: Роздуплитись як зробити всі поля в один стовпчик, один під одним з вирівнюванням полівому краю, а текст-підпис по правому*/

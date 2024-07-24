@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 
 <head>
     <meta charset="UTF-8">
@@ -12,17 +12,17 @@
     <form action="" method="post">
         <lable>
             Повне ім'я:
-            <input type="text" name="name" placeholder="введіть ім'я" required>
+            <input type="text" name="name" placeholder="введіть ім'я" autocomplete="name" required>
         </lable>
 
         <lable>
             Email:
-            <input type="email" name="mail" placeholder="введіть пошту" required>
+            <input type="email" name="mail" placeholder="введіть пошту" autocomplete="email" required>
         </lable>
 
         <lable>
             Телефон:
-            <input type="tel" name="phone" placeholder="0001112233" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+            <input type="tel" name="phone" placeholder="0001112233" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" autocomplete="tel" required>
         </lable>
 
         <lable>
@@ -40,17 +40,17 @@
             <lable>
                 <input type="radio" name="sex" value="male" required>
             </lable>
-                чоловіча
+            чоловіча
 
             <lable>
                 <input type="radio" name="sex" value="female" required>
             </lable>
-                жіноча
+            жіноча
 
             <lable>
                 <input type="radio" name="sex" value="other" required>
             </lable>
-                інша
+            інша
         </fieldset>
 
         <lable>
@@ -61,6 +61,7 @@
         <lable>
             Курс:
             <select name="courses" required>
+                <option disabled selected value="">-=Виберіть курс=-</option>
                 <option value="frontend">Frontend</option>
                 <option value="backend">Backend</option>
                 <option value="project-manager">Project-manager</option>
@@ -69,7 +70,7 @@
 
         <lable>
             Адреса:
-            <input type="textarea" name="adress" placeholder="введіть адресу">
+            <textarea name="adress" class="adress" placeholder="введіть адресу"></textarea>
         </lable>
 
         <lable class="agrement">
