@@ -10,77 +10,77 @@
 
 <body>
     <form action="" method="post">
-        <lable>
+        <label>
             Повне ім'я:
-            <input type="text" name="name" placeholder="введіть ім'я" autocomplete="name" required>
-        </lable>
+            <input type="text" name="name" placeholder="введіть ім'я" autocomplete="on" title="Будь ласка, введіть ваше ім'я" required>
+        </label>
 
-        <lable>
+        <label>
             Email:
-            <input type="email" name="mail" placeholder="введіть пошту" autocomplete="email" required>
-        </lable>
+            <input type="email" name="mail" placeholder="введіть пошту" autocomplete="on" title="Будь ласка, введіть вашу пошту в форматі ***@***.***" required>
+        </label>
 
-        <lable>
+        <label>
             Телефон:
-            <input type="tel" name="phone" placeholder="0001112233" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" autocomplete="tel" required>
-        </lable>
+            <input type="tel" name="phone" placeholder="0001112233" maxlength="10" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" autocomplete="on" title="Будь ласка, введіть ваш телефон в форматі 0001112233" required>
+        </label>
 
-        <lable>
+        <label>
             Пароль:
-            <input type="password" minlength="5" name="password" placeholder="введіть пароль" required>
-        </lable>
+            <input type="password" minlength="5" name="password" placeholder="введіть пароль" title="Будь ласка, введіть ваш пароль. Мінімальна довжина паролю 5 символів" required>
+        </label>
 
-        <lable>
+        <label>
             Пароль ще раз:
-            <input type="password" name="repeat-password" placeholder="повторіть пароль" required>
-        </lable>
+            <input type="password" name="repeat-password" placeholder="повторіть пароль" title="Будь ласка, повторіть ваш пароль" required>
+        </label>
 
-        <fieldset class="sex">
+        <fieldset class="sex" title="Будь ласка, оберіть зі списку" >
             Стать:
-            <lable>
+            <label>
                 <input type="radio" name="sex" value="male" required>
-            </lable>
-            чоловіча
+                чоловіча
+            </label>
 
-            <lable>
+            <label>
                 <input type="radio" name="sex" value="female" required>
-            </lable>
-            жіноча
+                жіноча
+            </label>
 
-            <lable>
+            <label>
                 <input type="radio" name="sex" value="other" required>
-            </lable>
-            інша
+                інша
+            </label>
         </fieldset>
 
-        <lable>
+        <label>
             Вік:
-            <input type="number" name="age" min="18" placeholder="введіть вік" required>
-        </lable>
+            <input type="number" name="age" min="18" placeholder="введіть вік" title="Будь ласка, вкажіть ваш вік" required>
+        </label>
 
-        <lable>
+        <label>
             Курс:
-            <select name="courses" required>
+            <select name="courses" title="Будь ласка, виберіть зі списку" required>
                 <option disabled selected value="">-=Виберіть курс=-</option>
                 <option value="frontend">Frontend</option>
                 <option value="backend">Backend</option>
                 <option value="project-manager">Project-manager</option>
             </select>
-        </lable>
+        </label>
 
-        <lable>
+        <label>
             Адреса:
-            <textarea name="adress" class="adress" placeholder="введіть адресу"></textarea>
-        </lable>
+            <textarea name="adress" class="adress" placeholder="введіть адресу" title="Будь ласка, введіть вашу адресу" ></textarea>
+        </label>
 
-        <lable class="agrement">
+        <label class="agrement" title="Натискаючи, ви погоджуєтеся з обробкою ваших персональних даних">
             <input type="checkbox" name="agrement" required>
             Я погоджуюся з обробкою персональних даних
-        </lable>
+        </label>
 
         <fieldset class="buttons">
-            <button type="reset">Очистити форму</button>
-            <button>Зареєструватися</button>
+            <button type="reset" title="Натисніть, щоб очистити всі поля" >Очистити форму</button>
+            <button title="Натисніть, щоб зареєструватися" >Зареєструватися</button>
         </fieldset>
     </form>
 </body>
